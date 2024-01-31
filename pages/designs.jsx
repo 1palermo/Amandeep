@@ -4,9 +4,9 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import propertyImg from "../public/assets/projects/property.jpg";
-import cryptoImg from "../public/assets/projects/crypto.jpg";
-import netflixImg from "../public/assets/projects/netflix.jpg";
-import twitchImg from "../public/assets/projects/twitch.jpg";
+import SemaImg from "../public/assets/projects/sema.png";
+import hostel from "../public/assets/projects/hm.png";
+import ganak from "../public/assets/projects/ganak.png";
 import bigBlock from "../public/assets/projects/bb.png";
 import ProjectItem from "../components/ProjectItem";
 
@@ -32,26 +32,27 @@ const designs = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectItem
               title="Hostel Complaint App"
-              backgroundImg={propertyImg}
-              projectUrl="/property"
+              backgroundImg={hostel}
+              projectUrl="https://www.figma.com/file/sN2hdVe0ZlEBwZpMOZO9JZ/Hostel?type=design&mode=design&t=7yOL9dSC6JGt8zCb-1"
               tech=""
-            />
-            <ProjectItem
-              title="SEMA"
-              backgroundImg={cryptoImg}
-              projectUrl="/crypto"
-              tech="React JS"
             />
             <ProjectItem
               title="Big Blockers Community"
               backgroundImg={bigBlock}
-              projectUrl="/netflix"
+              projectUrl="https://www.figma.com/proto/1Oqrs9vaKiTvppWQT86NnD?node-id=0-1&mode=design&t=yUlET3YLOW6yRqw5-6"
               tech="React JS"
             />
             <ProjectItem
+              title="SEMA"
+              backgroundImg={SemaImg}
+              projectUrl="https://www.figma.com/file/e46bRRRXYg5k05zpTHcTge/SEMA-SIH-Designs?type=design&mode=design&t=laefT2rp2JgeW5B0-1"
+              tech="React JS"
+              imageStyle={{ width: '100px', height: '200px' }}
+            />
+            <ProjectItem
               title="GANAK"
-              backgroundImg={twitchImg}
-              projectUrl="/twitch"
+              backgroundImg={ganak}
+              projectUrl=""
               tech="Next JS"
             />
           </div>
