@@ -7,15 +7,14 @@ import Skills from "../components/Skills";
 
 export default function Home() {
   return (
-    <div className=""
-    >
+    <div className="">
       <Head>
         <title>Aman | Software Engineer</title>
         <meta
           name="description"
           content="I’m a software developer specializing in building (and occasionally designing) exceptional digital experiences."
         />
-        <link rel="icon" href="./assets/logo.png" />
+        <link rel="icon" href="./assets/logo1.png" />
       </Head>
       <Main />
       <About />

@@ -1,50 +1,49 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import propertyImg from '../public/assets/projects/property.jpg';
-import cryptoImg from '../public/assets/projects/crypto.jpg'
-import netflixImg from '../public/assets/projects/netflix.jpg'
-import twitchImg from '../public/assets/projects/twitch.jpg'
-import bigBlock from '../public/assets/projects/bb.png'
-import ProjectItem from './ProjectItem';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import propertyImg from "../public/assets/projects/hm.png";
+import cryptoImg from "../public/assets/projects/sema.png";
+import twitchImg from "../public/assets/projects/ganak.png";
+import bigBlock from "../public/assets/projects/bb.png";
+import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
-    <div id='projects' className='w-full'>
-      <div className='max-w-[1240px] mx-auto px-2 py-16'>
-        <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
+    <div id="projects" className="w-full">
+      <div className="max-w-[1240px] mx-auto px-2 py-16">
+        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Projects
         </p>
-        <h2 className='py-4'>What I&apos;ve Built</h2>
-        <div className='grid md:grid-cols-2 gap-8'>
+        <h2 className="py-4">What I&apos;ve Built</h2>
+        <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title='Hostel Complaint App'
+            title="Hostel Complaint App"
             backgroundImg={propertyImg}
-            projectUrl='/property'
-            tech='React JS'
+            projectUrl="/property"
+            tech="Next JS"
           />
           <ProjectItem
-            title='SEMA'
-            backgroundImg={cryptoImg}
-            projectUrl='/crypto'
-            tech='React JS'
-
-          />
-          <ProjectItem
-            title='Big Blockers Community'
+            title="Big Blockers Community"
             backgroundImg={bigBlock}
-            projectUrl='/netflix'
-            tech='React JS'
-
+            projectUrl="/netflix"
+            tech="Svelte JS"
           />
           <ProjectItem
-            title='GANAK'
+            title="GANAK"
             backgroundImg={twitchImg}
-            projectUrl='/twitch'
-            tech='Next JS'
-
+            projectUrl="/twitch"
+            tech="Svelte JS"
+          />
+          <ProjectItem
+            title="SEMA"
+            backgroundImg={cryptoImg}
+            projectUrl="/crypto"
+            tech="Kotlin & Java"
           />
         </div>
+        <p className="lg:pt-10 pt-5 text-lg lg:text-2xl ">
+          <a href="/projects">{`More ->`}</a>
+        </p>
       </div>
     </div>
   );

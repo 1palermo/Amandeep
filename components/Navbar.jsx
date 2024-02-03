@@ -60,7 +60,7 @@ const Navbar = () => {
               <Link href="/#skills">Skills</Link>
             </li>
             <li className="ml-10 text-lg text-white uppercase hover:border-b">
-              <Link href="/#projects">Projects</Link>
+              <Link href="/projects">Projects</Link>
             </li>
             <li className="ml-10 text-lg text-white  uppercase hover:border-b">
               <Link href="/designs">Designs</Link>
@@ -137,7 +137,7 @@ const Navbar = () => {
                   Designs
                 </li>
               </Link>
-              <Link href="/#projects">
+              <Link href="/projects">
                 <li onClick={() => setNav(false)} className="py-4 text-md">
                   Projects
                 </li>

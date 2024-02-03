@@ -12,7 +12,7 @@ const About = () => {
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-gray-600">
+          <p className="py-2 text-gray-600 lg:m-auto sm:mx-2">
             I am currently a passionate and dedicated 3rd year student, eagerly seeking to embark on an exciting journey in
             the world of technology. My goal is to secure a{" "}
             <span className="text-[#5651e5]">
@@ -21,7 +21,7 @@ const About = () => {
             role at a big tech company, where I can utilize my skills and
             knowledge to drive innovation and make a significant impact.
           </p>
-          <p className="py-2 text-gray-600">
+          <p className="py-2 text-gray-600 ">
             Throughout my academic journey, I have delved deep into the
             fascinating realm of Data Structures and Algorithms, honing my
             problem-solving abilities and cultivating a strong foundation in
@@ -47,7 +47,7 @@ const About = () => {
             environments, where challenges are embraced as opportunities for
             growth, and creativity knows no bounds.
           </p>
-          <Link href="/#projects">
+          <Link href="/projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">
               Check out some of my latest projects.
             </p>
