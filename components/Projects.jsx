@@ -42,7 +42,7 @@ const Projects = () => {
           />
         </div>
         <p className="lg:pt-10 pt-5 text-lg lg:text-2xl ">
-          <a href="/projects">{`More ->`}</a>
+          <Link href="/projects">{`More ->`}</Link>
         </p>
       </div>
     </div>

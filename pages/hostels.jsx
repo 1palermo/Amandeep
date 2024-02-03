@@ -27,9 +27,9 @@ const hostels = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-          Hostel Complaint System project is a testament to his adeptness in full-stack web development. Utilizing Next.js, Node.js, MongoDB, Typescript, and Cloudinary, he created a dynamic web application that significantly improved efficiency within the hostel ecosystem.
-The system's role-specific dashboards for administrators, attendants, and students allowed for seamless communication and real-time issue resolution. Aman's user-centric design approach, backed by thorough research, resulted in a 20% increase in student satisfaction. The automation implemented, including student registration and complaint management, contributed to a 20% boost in operational efficiency.
-This project not only showcased Aman's technical proficiency in modern web technologies but also emphasized his commitment to user experience. The utilization of a scalable tech stack and the incorporation of modern tools underline his capability to create secure, scalable, and user-friendly applications. Aman Deep's Hostel Complaint System stands as a compelling example of his skills in web development, problem-solving, and user-centric design.
+          Hostel Complaint System project is a testament to his adeptness in full-stack web development. Utilizing Next.js, Node.js, MongoDB, Typescript, and Cloudinary, I created a dynamic web application that significantly improved efficiency within the hostel ecosystem.
+The system role-specific dashboards for administrators, attendants, and students allowed for seamless communication and real-time issue resolution. My user-centric design approach, backed by thorough research, resulted in a 20% increase in student satisfaction. The automation implemented, including student registration and complaint management, contributed to a 20% boost in operational efficiency.
+This project not only showcased my technical proficiency in modern web technologies but also emphasized his commitment to user experience. The utilization of a scalable tech stack and the incorporation of modern tools underline his capability to create secure, scalable, and user-friendly applications. My Hostel Complaint System stands as a compelling example of his skills in web development, problem-solving, and user-centric design.
           </p>
           <a
             href="https://github.com/1palermo/Hostel-Complaint "
