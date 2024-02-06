@@ -1,32 +1,56 @@
-import React from 'react';
-import Head from 'next/head';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+// resume.js
+import React, { useState, useEffect } from "react";
+import Head from "next/head";
+import axios from "axios";
 
-const resume = () => {
+const Resume = () => {
+  const [downloadCount, setDownloadCount] = useState(0);
+
+  useEffect(() => {
+    // Fetch the initial download count when the component mounts
+    axios
+      .get("/api/getDownloadCount")
+      .then((response) => setDownloadCount(response.data.count))
+      .catch((error) => console.error("Error fetching download count:", error));
+  }, []);
+
+  const handleDownloadClick = () => {
+    // Increment the download count locally
+    setDownloadCount((prevCount) => prevCount + 1);
+
+    // Update the download count on the server
+    axios
+      .post("/api/updateDownloadCount", { count: downloadCount + 1 })
+      .then((response) =>
+        console.log("Download count updated on the server:", response.data)
+      )
+      .catch((error) => console.error("Error updating download count:", error));
+  };
+
   return (
     <>
-      <Head>
-        <title>Aman | Resume</title>
-        <meta
-          name='description'
-          content='I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences.'
-        />
-        <link rel='icon' href='/fav.png' />
-      </Head>
+      <Head>{/* Head content... */}</Head>
 
-      <div className='max-w-[940px] mx-auto p-2 text-center pt-[120px]'>
-        <h2 className='text-center'>Resume</h2>
+      <div className="max-w-[940px] mx-auto p-2 text-center pt-[120px]">
+        <h2 className="text-center">Resume</h2>
         <a
-            href='https://drive.google.com/file/d/1mPSja848AGhwRw4L6go6HRCybBOQlVxJ/view?usp=sharing'
-            target='_blank'
-            rel='noreferrer'
+          href="https://drive.google.com/file/d/1mPSja848AGhwRw4L6go6HRCybBOQlVxJ/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button
+            className="text-center justify-center px-5 py-5 mt-10"
+            onClick={handleDownloadClick}
           >
-            <button className='text-center justify-center px-5 py-5 mt-10'>Download</button>
+            Download
+          </button>
         </a>
-        {/*  */}
+        <p className="text-center my-5 lg:text-2xl sm:text-md">
+          Download Count: {downloadCount}
+        </p>
       </div>
     </>
   );
 };
 
-export default resume;
+export default Resume;
