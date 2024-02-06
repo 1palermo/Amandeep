@@ -9,6 +9,7 @@ import hostel from "../public/assets/projects/hm.png";
 import ganak from "../public/assets/projects/ganak.png";
 import bigBlock from "../public/assets/projects/bb.png";
 import ProjectItem from "../components/ProjectItem";
+import ganakHeader from "../public/assets/projects/twitch.png"
 
 const designs = () => {
   return (
@@ -38,19 +39,19 @@ const designs = () => {
             <ProjectItem
               title="Big Blockers Community"
               backgroundImg={bigBlock}
-              projectUrl="https://www.figma.com/proto/1Oqrs9vaKiTvppWQT86NnD?node-id=0-1&mode=design&t=yUlET3YLOW6yRqw5-6"
+              projectUrl="/crypto"
               tech="Svelte JS"
             />
             <ProjectItem
               title="GANAK"
               backgroundImg={ganak}
-              projectUrl=""
+              projectUrl="/ganak"
               tech="Svelte JS"
             />
             <ProjectItem
               title="SEMA"
               backgroundImg={SemaImg}
-              projectUrl="https://www.figma.com/file/e46bRRRXYg5k05zpTHcTge/SEMA-SIH-Designs?type=design&mode=design&t=laefT2rp2JgeW5B0-1"
+              projectUrl="/sema"
               tech="Kotlin & Java"
               imageStyle={{ width: "100px", height: "200px" }}
             />
