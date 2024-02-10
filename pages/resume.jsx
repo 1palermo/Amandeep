@@ -1,7 +1,6 @@
-// resume.js
-import React, { useState, useEffect } from "react";
-import Head from "next/head";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
+import axios from 'axios';
 
 const Resume = () => {
   const [downloadCount, setDownloadCount] = useState(0);
@@ -9,22 +8,23 @@ const Resume = () => {
   useEffect(() => {
     // Fetch the initial download count when the component mounts
     axios
-      .get("/api/getDownloadCount")
+      .get('https://your-backend-url/api/getDownloadCount')
       .then((response) => setDownloadCount(response.data.count))
-      .catch((error) => console.error("Error fetching download count:", error));
+      .catch((error) => console.error('Error fetching download count:', error));
   }, []);
 
   const handleDownloadClick = () => {
     // Increment the download count locally
-    setDownloadCount((prevCount) => prevCount + 1);
+    const updatedCount = downloadCount + 1;
+    setDownloadCount(updatedCount);
 
     // Update the download count on the server
     axios
-      .post("/api/updateDownloadCount", { count: downloadCount + 1 })
+      .post('https://your-backend-url/api/updateDownloadCount', { count: updatedCount })
       .then((response) =>
-        console.log("Download count updated on the server:", response.data)
+        console.log('Download count updated on the server:', response.data)
       )
-      .catch((error) => console.error("Error updating download count:", error));
+      .catch((error) => console.error('Error updating download count:', error));
   };
 
   return (
