@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import Head from 'next/head';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import Head from "next/head";
+import axios from "axios";
 
 const Resume = () => {
   const [downloadCount, setDownloadCount] = useState(0);
@@ -8,9 +8,9 @@ const Resume = () => {
   useEffect(() => {
     // Fetch the initial download count when the component mounts
     axios
-      .get('https://your-backend-url/api/getDownloadCount')
+      .get("https://amandeepbackend.onrender.com")
       .then((response) => setDownloadCount(response.data.count))
-      .catch((error) => console.error('Error fetching download count:', error));
+      .catch((error) => console.error("Error fetching download count:", error));
   }, []);
 
   const handleDownloadClick = () => {
@@ -20,11 +20,11 @@ const Resume = () => {
 
     // Update the download count on the server
     axios
-      .post('https://your-backend-url/api/updateDownloadCount', { count: updatedCount })
+      .post("https://amandeepbackend.onrender.com", { count: updatedCount })
       .then((response) =>
-        console.log('Download count updated on the server:', response.data)
+        console.log("Download count updated on the server:", response.data)
       )
-      .catch((error) => console.error('Error updating download count:', error));
+      .catch((error) => console.error("Error updating download count:", error));
   };
 
   return (
@@ -46,7 +46,7 @@ const Resume = () => {
           </button>
         </a>
         <p className="text-center my-5 lg:text-2xl sm:text-md">
-          Download Count: {downloadCount}
+          {/* Download Count: {downloadCount} */}
         </p>
       </div>
     </>
