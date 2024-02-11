@@ -45,9 +45,6 @@ const Resume = () => {
             Download
           </button>
         </a>
-        <p className="text-center my-5 lg:text-2xl sm:text-md">
-          {/* Download Count: {downloadCount} */}
-        </p>
       </div>
     </>
   );
