@@ -34,7 +34,7 @@ const Resume = () => {
       <div className="max-w-[940px] mx-auto p-2 text-center pt-[120px]">
         <h2 className="text-center">Resume</h2>
         <a
-          href="https://drive.google.com/file/d/1mPSja848AGhwRw4L6go6HRCybBOQlVxJ/view?usp=sharing"
+          href=""
           target="_blank"
           rel="noreferrer"
         >
